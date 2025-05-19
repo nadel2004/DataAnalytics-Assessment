@@ -1,1 +1,4 @@
-# DataAnalytics-Assessment
+For Question 1, I used conditional aggregation to count savings and investment plans seperately. I also filtered for active, non deleted plans(is_deleted=0, status_id=1) with positive amounts and converted amount from kobo to naira by dividing by 100.
+For Question 2, I created a CTE to calculate monthly transaction patterns, then used Case statements for categorization and included active months to properlly average transactions.
+For Question 3, i sorted both savings and investment acccounts, included accounts with no transactions at all(Null for both transactions and last transaction date) and calculated exact inactivity days.
+For Question 4, I used TIMESTAMPDIFF for accurate month calculations, included 'NullIF' to prevent division by zero. I applied the 0.1% profit assumption and converted from kobo to naira in final calculations.
